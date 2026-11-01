@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#190d29">
+    <meta name="description" content="Una pequeña sorpresa de cumpleaños para Demi 💜">
+
+    <title>Para Demi 💜</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="background-glow"></div>
+
+    <div class="sparkle sparkle-1">✦</div>
+    <div class="sparkle sparkle-2">✧</div>
+    <div class="sparkle sparkle-3">✦</div>
+    <div class="sparkle sparkle-4">♡</div>
+
+    <main class="container">
+
+        <div class="top-label">
+            <span>✦</span> UNA PEQUEÑA SORPRESA <span>✦</span>
+        </div>
+
+        <section class="card">
+
+            <div class="card-decoration">♡</div>
+
+            <p class="greeting">Para alguien muy especial...</p>
+
+            <h1>Happy Birthday,<br>
+                <span>Demi!</span>
+            </h1>
+
+            <p class="subtitle">
+                Hoy es un día para celebrar que existes. 💜
+            </p>
+
+            <div class="photo-frame">
+                <div class="photo-decoration">✧</div>
+
+                <a href="https://craxkerssj.github.io/" target="_blank" rel="noopener noreferrer">
+                    <img
+                        src="https://i.pinimg.com/736x/75/fd/8c/75fd8cb98e3e55789e9b1f6cb13fbfcf.jpg"
+                        alt="Hatsune Miku: Kasane Teto"
+                    >
+                </a>
+
+                <div class="photo-caption">
+                    A little gift for you ♡
+                </div>
+            </div>
+
+            <a href="https://craxkerssj.github.io/litaxtetooo/index.html"
+               class="secondary-button">
+               Conoce otro regalito ✧
+               <span>↗</span>
+            </a>
+
+            <div class="divider">
+                <span>✧</span>
+                <div></div>
+                <span>♡</span>
+                <div></div>
+                <span>✧</span>
+            </div>
+
+            <p class="intro">
+                Tengo algo que decirte...
+            </p>
+
+            <button id="openLetter" class="open-button">
+                Abrir tu regalito <span>♡</span>
+            </button>
+
+            <section id="letter" class="letter hidden">
+
+                <div class="letter-heading">
+                    <span>✦</span>
+                    <h2>Una carta para ti</h2>
+                    <span>✦</span>
+                </div>
+
+                <p>
+                    Primero que nada, feliz cumpleaños, Demi!
+                    Espero que hoy tengas un día increíble y que
+                    puedas disfrutarlo mushísimo.
+                </p>
+
+                <p>
+                    Quiero desearte lo mejor en esta nueva etapa
+                    de tu vida. Que nunca te falten motivos para
+                    sonreír(porfa hazlo), personas que te quieran de verdad(como yio)
+                    y oportunidades para cumplir todo aquello
+                    que te propongas(y sigas adelante).
+                </p>
+
+                <p>
+                    No importa lo que venga, espero que sigas
+                    siendo esa personita tan especial(shi), que nunca
+                    dejes de ser como eres y que siempre tengas
+                    fuerzas para seguir adelante.
+                </p>
+
+                <p>
+                    Y bueno, quizás no siempre encuentre las
+                    palabras adecuadas para expresarlo, pero
+                    quiero que sepas que te quiero muchísimo(oite).
+                    Gracias por existir y por ser parte de mi vida.
+                </p>
+
+                <p class="final-message">
+                    Mereces cosas bonitas, Demi. Nunca lo olvides. 💜
+                </p>
+
+                <div class="signature">
+                    Con mucho cariño,
+                    <strong>Tetto ♡</strong>
+                </div>
+
+            </section>
+
+            <div class="footer">
+                Hecho con mucho cariño <span>♥</span>
+            </div>
+
+        </section>
+
+        <p class="bottom-text">
+            Una pequeña página, para alguien que vale mucho. ✧
+        </p>
+
+    </main>
+
+    <script>
+        const button = document.getElementById("openLetter");
+        const letter = document.getElementById("letter");
+
+        button.addEventListener("click", () => {
+            letter.classList.toggle("hidden");
+
+            if (letter.classList.contains("hidden")) {
+                button.innerHTML = 'Abrir tu regalito <span>♡</span>';
+            } else {
+                button.innerHTML = 'Cerrar cartita <span>✧</span>';
+                letter.scrollIntoView({
+                    behavior: "smooth",
+                    block: "nearest"
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>
